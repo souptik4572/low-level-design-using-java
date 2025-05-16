@@ -3,9 +3,9 @@ package com.example.design.patterns.creational.factory.logictics;
 public class LogisticFactory {
     public static LogisticInterface getLogistics(TransportMode transportMode) {
         switch(transportMode) {
-            case TransportMode.AIR:
+            case AIR:
                 return new AirLogistic();
-            case TransportMode.WATER:
+            case WATER:
                 return new WaterLogistic();
             default:
                 return new RoadLogistic();
