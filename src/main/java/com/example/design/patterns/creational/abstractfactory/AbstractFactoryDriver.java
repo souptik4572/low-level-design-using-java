@@ -1,9 +1,9 @@
-package com.example.design.patterns.creational.abstractFactory;
+package com.example.design.patterns.creational.abstractfactory;
 
-import com.example.design.patterns.creational.abstractFactory.paymentgateway.CheckoutService;
-import com.example.design.patterns.creational.abstractFactory.paymentgateway.IndiaFactory;
-import com.example.design.patterns.creational.abstractFactory.paymentgateway.PaymentGatewayType;
-import com.example.design.patterns.creational.abstractFactory.paymentgateway.USFactory;
+import com.example.design.patterns.creational.abstractfactory.paymentgateway.CheckoutService;
+import com.example.design.patterns.creational.abstractfactory.paymentgateway.IndiaFactory;
+import com.example.design.patterns.creational.abstractfactory.paymentgateway.PaymentGatewayType;
+import com.example.design.patterns.creational.abstractfactory.paymentgateway.USFactory;
 
 public class AbstractFactoryDriver {
     public static void main(String[] args) {

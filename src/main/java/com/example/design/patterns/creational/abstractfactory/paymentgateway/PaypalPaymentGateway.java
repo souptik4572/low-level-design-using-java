@@ -1,4 +1,4 @@
-package com.example.design.patterns.creational.abstractFactory.paymentgateway;
+package com.example.design.patterns.creational.abstractfactory.paymentgateway;
 
 public class PaypalPaymentGateway implements PaymentGatway {
     @Override
