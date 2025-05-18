@@ -14,5 +14,17 @@ public class BuilderDriver {
                 .withSoftDrink("Sprite")
                 .build();
         System.out.println(paneearBurgerCompleteMeal.toString());
+
+        System.out.println();
+
+        HttpRequest exampleRequest = new HttpRequest.HttpRequestBuilder()
+                .method("POST")
+                .url("https://api.example.com/users")
+                .addHeader("Authorization", "Bearer token")
+                .addQueryParam("verbose", "true")
+                .body("{ \"name\": \"John\" }")
+                .timeout(5000)
+                .build();
+        System.out.println(exampleRequest.toString());
     }
 }
