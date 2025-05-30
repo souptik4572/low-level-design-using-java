@@ -16,14 +16,18 @@ public class RemoteControl {
 
     public void pressButton(ApplianceType applianceType) {
         Command command = commands.get(applianceType);
-        if(isTurnedOn(command.getState())) {
+        if(command == null) {
+            System.out.println("Command not found :)");
+            return;
+        }
+        if(isApplianceTurnedOn(command.getApplianceState())) {
             command.undo();
             return;
         }
         command.execute();
     }
 
-    private boolean isTurnedOn(ApplianceState state) {
+    private boolean isApplianceTurnedOn(ApplianceState state) {
         return state == ApplianceState.ON;
     }
 }

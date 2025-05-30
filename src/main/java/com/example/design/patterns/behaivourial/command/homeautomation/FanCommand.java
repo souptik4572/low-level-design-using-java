@@ -8,7 +8,7 @@ public class FanCommand implements Command {
     }
 
     @Override
-    public ApplianceState getState() {
+    public ApplianceState getApplianceState() {
         return appliance.getState();
     }
 

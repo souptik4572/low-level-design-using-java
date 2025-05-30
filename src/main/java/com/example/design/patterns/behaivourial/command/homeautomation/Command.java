@@ -1,7 +1,7 @@
 package com.example.design.patterns.behaivourial.command.homeautomation;
 
 public interface Command {
-    ApplianceState getState();
+    ApplianceState getApplianceState();
     void execute();
     void undo();
 }
